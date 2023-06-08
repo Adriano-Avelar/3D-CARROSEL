@@ -4,8 +4,7 @@
    }  
    html,  
    body {  
-    height: 100%;  
-    /* for touch screen */  
+    height: 100%;   
     touch-action: none;   
    }  
    body {  
@@ -25,6 +24,7 @@
     display: -ms-flexbox;  
     display: flex;  
     margin: auto;  
+    justify-content: center;
     -webkit-transform-style: preserve-3d;  
         transform-style: preserve-3d;  
     -webkit-transform: rotateX(-10deg);  
@@ -40,6 +40,7 @@
     height: 100%;  
     line-height: 200px;  
     font-size: 50px;  
+    justify-content: center;
     text-align: center;  
     -webkit-box-shadow: 0 0 8px #fff;  
         box-shadow: 0 0 8px #fff;  
@@ -109,4 +110,15 @@
      -webkit-transform: rotateY(0deg);  
          transform: rotateY(0deg);  
     }  
-   } 
+
+    audio{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        display: block;
+        margin: 0 auto;
+        max-width: 50%;
+        width: 100px; /
+    }
